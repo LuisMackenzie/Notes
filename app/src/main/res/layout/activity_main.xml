@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="@dimen/common_padding_default">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                android:hint="@string/escribe_una_nota"
+                app:counterEnabled="true"
+                app:counterMaxLength="@integer/desc_max_lenght"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiet_desc"
+                    android:maxLength="@integer/desc_max_lenght"
+                    android:layout_width="match_parent"
+                    android:inputType="textCapSentences"
+                    android:imeOptions="actionDone"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageButton
+                android:id="@+id/btn_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_padding_default"
+                android:src="@drawable/ic_note_add"
+                android:background="?attr/selectableItemBackground"
+                app:tint="@color/pink_200" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tareas_pendientes"
+            android:paddingHorizontal="@dimen/common_padding_default"
+            android:textAppearance="?attr/textAppearanceOverline" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_note"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tareas_finalizadas"
+            android:paddingHorizontal="@dimen/common_padding_default"
+            android:textAppearance="?attr/textAppearanceOverline" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_notes_finished"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_note"/>
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

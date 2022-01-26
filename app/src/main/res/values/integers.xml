@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="desc_max_lenght">60</integer>
+    <integer name="desc_size_finished">12</integer>
+    <integer name="desc_size_default">16</integer>
+</resources>

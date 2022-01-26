@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Notes</string>
+    <string name="escribe_una_nota">Escribe una Nota</string>
+    <string name="dialog_title">¿Eliminar la nota?</string>
+    <string name="dialog_ok">Eliminar</string>
+    <string name="dialog_cancel">Cancelar</string>
+    <string name="validation_field_required">Campo Requerido</string>
+    <string name="validation_error">Primero escriba algo en la nota</string>
+    <string name="tareas_finalizadas">Tareas finalizadas:</string>
+    <string name="tareas_pendientes">Tareas Pendientes:</string>
+    <string name="db_write_succes">Se Agrego la Tarea</string>
+    <string name="db_write_error">Error al Escribir en la base de datos</string>
+    <string name="db_update_succes">Se Actualizo el Estado de la Tarea</string>
+    <string name="db_update_error">Error al Actualizar la base de datos</string>
+    <string name="db_delete_succes">Se elimino existosamente</string>
+    <string name="db_delete_error">Hubo algun error al eliminar</string>
+</resources>

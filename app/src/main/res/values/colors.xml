@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="lime_100">#ffffa6</color>
+    <color name="lime_300">#dce775</color>
+    <color name="lime_500">#a8b545</color>
+    <color name="pink_100">#ffc1e3</color>
+    <color name="pink_200">#f48fb1</color>
+    <color name="pink_500">#bf5f82</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
